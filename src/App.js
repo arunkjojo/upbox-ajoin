@@ -156,7 +156,7 @@ function ResponsiveApp() {
 
         <Box sx={{ flexGrow: 1 }}  className="hero">
           <Grid container direction="row">
-            <Grid xs={12} sm={12} md={5} className="hero_left">
+            <Grid xs={12} sm={12} md={5} lg={4}className="hero_left">
               <h1 className="hero_title">
                 Look good without leaving your house.
               </h1>
@@ -168,7 +168,7 @@ function ResponsiveApp() {
               </p>
               <button className="hero_signup_btn">SIGN UP {">"}</button>
             </Grid>
-            <Grid xs={12} sm={12} md={7}>
+            <Grid xs={12} sm={12} md={7} lg={8}>
               <div className="hero_right">
                 <img src={box} alt="hero_box_img" className="hero_box_img" />
               </div>

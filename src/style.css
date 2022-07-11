@@ -70,6 +70,7 @@
     background-color: #F5F8FF;
     padding-bottom: 50px;
 }
+
 .hero_title {
     font-family: 'DM Serif Display';
     font-weight: 400;
@@ -95,6 +96,10 @@
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.12em;
+}
+
+.hero_right {
+    
 }
 
 .plan_body_left {
@@ -492,6 +497,38 @@
 
 /* Desktop L UI */
 @media screen and (min-width: 1025px){
+    .navbar {
+        justify-content: space-between;
+        margin-inline-start: 100px;
+        margin-inline-end: 10px;
+    }
+    .hero_left {
+        position: relative;
+        width: 511px;
+        left: 100px;
+        top: 182px;
+    }
+    .hero_title {
+        font-weight: 400;
+        font-size: 48px;
+    }
+    .hero_para {
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .hero_right {
+
+    }
+    .hero_box_img {
+        position: relative;
+        width: 540px;
+        height: 280px;
+        width: 1074px;
+        height: 530px;
+        right: 10%;
+        top: 89px;
+    }
 }
 /* Desktop M UI */
 @media screen and (min-width: 769px)  and (max-width: 1024px){
@@ -499,6 +536,36 @@
         justify-content: space-between;
         margin-inline-start: 100px;
         margin-inline-end: 10px;
+    }
+    .hero_left {
+        position: relative;
+        width: 511px;
+        left: 100px;
+        top: 260px;
+    }
+    .hero_title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero_para {
+        font-family: 'DM Sans';
+        font-size: 16px;
+        line-height: 25px;
+        margin-right: 10px;
+    }
+    .hero_right {
+        background-image: url('./assets/Marker-1.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    .hero_box_img {
+        position: relative;
+        width: 540px;
+        height: 280px;
+        width: 1074px;
+        height: 530px;
+        right: 10%;
+        top: 89px;
     }
 }
 /* Tablet UI */
