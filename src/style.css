@@ -518,7 +518,10 @@
         line-height: 18px;
     }
     .hero_right {
-
+        background-image: url('./assets/Marker.png');
+        background-repeat: no-repeat;
+        background-position-x: 75%;
+        background-position-y: 50%;
     }
     .hero_box_img {
         position: relative;
@@ -528,6 +531,27 @@
         height: 530px;
         right: 10%;
         top: 89px;
+    }
+
+    .pick_plan {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-top: -45px;
+    }
+
+    .work_1_txt{
+        padding-left: 25px;
+    }
+    .work_2_txt{
+        padding-left: 25px;
+    }
+    .work_3_txt{
+        padding-left: 25px;
+    }
+
+    .work_2{
+        position: relative;
+        left: 35%;
     }
 }
 /* Desktop M UI */
@@ -554,9 +578,10 @@
         margin-right: 10px;
     }
     .hero_right {
-        background-image: url('./assets/Marker-1.png');
+        background-image: url('./assets/Marker.png');
         background-repeat: no-repeat;
-        background-position-x: right;
+        background-position-x: 75%;
+        background-position-y: 50%;
     }
     .hero_box_img {
         position: relative;
@@ -566,6 +591,16 @@
         height: 530px;
         right: 10%;
         top: 89px;
+    }
+    .pick_plan {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-top: -45px;
+    }
+
+    .work_2{
+        position: relative;
+        left: 35%;
     }
 }
 /* Tablet UI */

@@ -264,7 +264,7 @@ function ResponsiveApp() {
                     </p>
                 </Grid>
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={12} container>
+              <Grid item xs={12} sm={12} md={12} lg={12} container className="work_2">
                 <Grid item xs={12} sm={4} className='work_2_img'>
                   <div className="work_body_2_bg_image">
                     <div className="work_body_2_art_image">
