@@ -10,7 +10,7 @@
 .App-body {
     padding-left: 1px !important;
     padding-right: 1px !important;
-    max-width: 100vw;
+    max-width: 100vw !important;
 }
 
 .center {

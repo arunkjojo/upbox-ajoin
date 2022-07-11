@@ -2,17 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-// import App from './App';
-import ResponsiveApp from './ResponsiveApp';
-// import MUIApp from './MUIApp';
+import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ResponsiveApp />
-    {/* <MUIApp /> */}
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 
