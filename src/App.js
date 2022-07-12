@@ -101,7 +101,7 @@ function ResponsiveApp() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem className="menu-link" key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -189,8 +189,7 @@ function ResponsiveApp() {
             </Grid>
             <Container>
               <Grid container>
-                <Grid item xs={12} sm={5.75} md={5.5} lg={5.1}>
-                  <div className="plan_body_left">
+                <Grid item xs={12} sm={5.5} md={5.5} lg={5.75} className="plan_body_left">
                     <h1 className="plan_body_main_heading">Monthly</h1>
 
                     <h1 className="plan_body_sub_heading">$18/mo</h1>
@@ -200,13 +199,9 @@ function ResponsiveApp() {
                         FIND YOUR BOX
                       </button>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </Grid>
-                <Grid item xs={12} sm={0.5} md={1} lg={1} sx={{display : {md:'flex'}}}>
-                  <div></div>
-                </Grid>
-                <Grid item xs={12} sm={5.75} md={5.5} lg={5.5}>
-                  <div className="plan_body_right">
+                <Grid item xs={12} sm={5.5} md={5.5} lg={5.75} className="plan_body_right">
                     <h1 className="plan_body_main_heading">Yearly</h1>
 
                     <h1 className="plan_body_sub_heading">$15/mo</h1>
@@ -216,7 +211,6 @@ function ResponsiveApp() {
                         FIND YOUR BOX
                       </button>
                     </div>
-                  </div>
                 </Grid>
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -229,10 +223,10 @@ function ResponsiveApp() {
           </Grid>
         </Box>
 
-        <Box display="flex" sx={{ flexGrow: 1 }}>
+        <Box display="flex" sx={{ flexGrow: 1 }} className="work">
           <Container>
             <Grid container>
-              <Grid item xs={12} sm={12} md={12} lg={12}>
+              <Grid sx={{maxHeight: 'fit-content'}} item xs={12} sm={12} md={12} lg={12}>
                 <h2 className="work_header_title">How it works?</h2>
 
                 <img
@@ -241,8 +235,8 @@ function ResponsiveApp() {
                   className="work_header_underline center"
                 />
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={12} container>
-                <Grid item xs={12} sm={4} className='work_1_img'>
+              <Grid sx={{maxHeight: 'fit-content'}} item xs={12} sm={12} md={12} lg={12} container>
+                <Grid item xs={12} sm={6} md={4} lg={4} className='work_1_img'>
                   <div className="work_body_1_art_image">
                     <img
                       src={work_body_1}
@@ -253,7 +247,7 @@ function ResponsiveApp() {
 
                   <span className="work_body_1_number">1</span>
                 </Grid>
-                <Grid item xs={12} sm={8} className='work_1_txt'>
+                <Grid item xs={12} sm={6} className='work_1_txt'>
                     <h1 className="work_body_1_heading">
                       Setup your profile & preferences
                     </h1>
@@ -264,7 +258,7 @@ function ResponsiveApp() {
                     </p>
                 </Grid>
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={12} container className="work_2">
+              <Grid sx={{maxHeight: 'fit-content'}} item xs={12} sm={12} md={12} lg={12} container className="work_2">
                 <Grid item xs={12} sm={4} className='work_2_img'>
                   <div className="work_body_2_bg_image">
                     <div className="work_body_2_art_image">
@@ -277,7 +271,7 @@ function ResponsiveApp() {
                   </div>
                   <span className="work_body_2_number">2</span>
                 </Grid>
-                <Grid item xs={12} sm={6} className='work_2_txt'>
+                <Grid item xs={12} sm={12} lg={12} className='work_2_txt'>
                     <h3 className="work_body_2_heading">Review your custom box</h3>
 
                     <p className="work_body_2_paragraph">
@@ -288,7 +282,7 @@ function ResponsiveApp() {
                 </Grid>
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={12} container>
-                <Grid item xs={12} sm={4} className='work_3_img'>
+                <Grid item xs={12} sm={6} md={4} lg={4} className='work_3_img'>
                   <div className="work_body_3_art_image">
                     <img
                       src={work_body_3}
@@ -298,7 +292,7 @@ function ResponsiveApp() {
                   </div>
                   <span className="work_body_3_number">3</span>
                 </Grid>
-                <Grid item xs={12} sm={8} className='work_3_txt'>
+                <Grid item xs={12} sm={6} className='work_3_txt'>
                   <h3 className="work_body_3_heading">Try it on at home</h3>
 
                   <p className="work_body_3_paragraph">
@@ -402,9 +396,8 @@ function ResponsiveApp() {
               </div>
             </Grid>
           </Grid>
-          <Grid container direction="row" justifyContent="space-around">
-            <Grid xs={6} lg={3}>
-              <div className="footer_content_1">
+          <Grid container direction="row" justifyContent="space-between">
+            <Grid item xs={6} sm={6} md={3} lg={3}  className="footer_content_1">
                 <h3 className="footer_content_1_heading">UPBOX</h3>
 
                 <div className="footer_content_1_link">
@@ -417,9 +410,8 @@ function ResponsiveApp() {
                   <li className="footer_content_1_link_item">Seasonal Items</li>
                   <li className="footer_content_1_link_item">Upbox Promise</li>
                 </div>
-              </div>
             </Grid>
-            <Grid xs={6} lg={3}>
+            <Grid item xs={6} sm={6} md={3} lg={3}>
               <div className="footer_content_2">
                 <h3 className="footer_content_2_heading">Find Us On</h3>
 
@@ -432,7 +424,7 @@ function ResponsiveApp() {
                 </div>
               </div>
             </Grid>
-            <Grid xs={6} lg={3}>
+            <Grid item xs={6} sm={6} md={3} lg={3}>
               <div className="footer_content_3">
                 <h3 className="footer_content_3_heading">Product</h3>
 
@@ -446,7 +438,7 @@ function ResponsiveApp() {
                 </div>
               </div>
             </Grid>
-            <Grid xs={6} lg={3}>
+            <Grid item xs={6} sm={6} md={3} lg={3}>
               <div className="footer_content_4">
                 <h3 className="footer_content_4_heading">Help</h3>
 
@@ -471,14 +463,14 @@ function ResponsiveApp() {
               </div>
             </Grid>
           </Grid>
-          <Grid container sx={{ justifyContent: "space-between" }}>
-            <Grid xs={12} md={3} lg={2} order={{ xs: 1, lg: 2 }}>
+          <Grid container>
+            <Grid xs={12} sm={2} md={2} lg={2} order={{ xs: 1, sm:1, md:2, lg: 2 }}>
               <p className="footer_bottom_terms">Terms</p>
             </Grid>
-            <Grid xs={12} lg={2} order={{ xs: 2, lg: 3 }}>
+            <Grid xs={12} sm={2} md={2} lg={2} order={{ xs: 2, sm:2, md:3, lg: 3 }}>
               <p className="footer_bottom_policy">Privacy Policy</p>
             </Grid>
-            <Grid xs={11} md={3} lg={8} order={{ xs: 3, lg: 1 }}>
+            <Grid xs={11} sm={12} md={8}  lg={8} order={{ xs: 3, sm:3, md:1, lg: 1 }}>
               <p className="footer_bottom_copyright">
                 © 2020 Quest AI. Upbox is a Sample Project and open source
                 design project free for personal and commercial use.
