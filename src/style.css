@@ -1354,7 +1354,7 @@
 
 @media only screen and (max-width: 700px) and (orientation: landscape) {
     .App-body {
-        background-color: #4A4A4A !important;
+        /* background-color: #4A4A4A !important; */
     }
     .navbar {
         justify-content: space-between;
