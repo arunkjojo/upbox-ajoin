@@ -47,7 +47,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = ["THIS MONTH", "SKIN", "HAIR", "BATH", "SALE"];
 
-function ResponsiveApp() {
+function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -93,12 +93,12 @@ function ResponsiveApp() {
               <span className="logo_txt">UPBOX</span>
             </div>
             {/* </Typography> */}
-            <></>
             <Box
               sx={{
                 flexGrow: 0,
                 display: { xs: "none", sm: "flex" },
               }}
+              className="menu-list"
             >
               {pages.map((page) => (
                 <MenuItem className="menu-link" key={page} onClick={handleCloseNavMenu}>
@@ -109,8 +109,9 @@ function ResponsiveApp() {
                 <div className="login_button">LOGIN {">"}</div>
               </MenuItem>
             </Box>
-            <Box sx={{ flexGrow: 0, display: { xs: "flex", sm: "none" } }} 
-                className="menu-icon">
+            <Box 
+              sx={{ flexGrow: 0, display: { xs: "flex", sm: "none" } }} 
+              className="menu-icon">
               <IconButton
                 size="large"
                 aria-label="more link"
@@ -188,8 +189,8 @@ function ResponsiveApp() {
               />
             </Grid>
             <Container>
-              <Grid container>
-                <Grid item xs={12} sm={5.5} md={5.5} lg={5.75} className="plan_body_left">
+              <Grid container >
+                <Grid item xs={12} sm={6} md={6} lg={6} className="plan_body_left">
                     <h1 className="plan_body_main_heading">Monthly</h1>
 
                     <h1 className="plan_body_sub_heading">$18/mo</h1>
@@ -201,7 +202,7 @@ function ResponsiveApp() {
                     </div>
                   {/* </div> */}
                 </Grid>
-                <Grid item xs={12} sm={5.5} md={5.5} lg={5.75} className="plan_body_right">
+                <Grid item xs={12} sm={6} md={6} lg={6} className="plan_body_right">
                     <h1 className="plan_body_main_heading">Yearly</h1>
 
                     <h1 className="plan_body_sub_heading">$15/mo</h1>
@@ -483,4 +484,4 @@ function ResponsiveApp() {
   );
 }
 
-export default ResponsiveApp;
+export default App;

@@ -105,16 +105,12 @@
     background-image: url('./assets/box1.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
-    width: 100%;
 }
 
 .plan_body_right {
     background-image: url('./assets/box2.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
-    width: 100%;
 }
 
 .plan_header_title {
@@ -142,9 +138,9 @@
     letter-spacing: 0.12em;
 }
 
-.plan_body_btn {
+/* .plan_body_btn {
     padding-bottom: 4px;
-}
+} */
 
 .plan_body_button {
     box-sizing: border-box;
@@ -547,10 +543,6 @@
         padding-top: 75px;
     }
 
-    .plan_body_right {
-        margin-left: 45px !important;
-    }
-
     .work_1_txt{
         padding-left: 25px;
     }
@@ -615,7 +607,7 @@
         padding-top: 75px;
     }
     .plan_body_right {
-        margin-left: 50px !important;
+        padding-left: 50px !important;
     }
     .plan_body_main_heading {
         font-weight: 400;
@@ -734,7 +726,7 @@
         padding-top: 75px;
     }
     .plan_body_right {
-        margin-left: 50px !important;
+        /* margin-left: 50px !important; */
     }
     .plan_body_main_heading {
         font-weight: 400;
@@ -1265,7 +1257,7 @@
     .work_body_1_number {
         left: 20px;
         top: -260px;
-        font-size: 200px;
+        font-size: 175px;
     }
     .work_body_1_heading {
         width: 260px;
@@ -1280,7 +1272,7 @@
     .work_body_2_number {
         left: 10px;
         top: -300px;
-        font-size: 150px;
+        font-size: 175px;
     }
     .work_body_2_art_image {
         background-position: -68px 165%;
@@ -1304,7 +1296,7 @@
         position: relative;
         left: -20px;
         top: -275px;
-        font-size: 200px;
+        font-size: 175px;
     }
     .work_body_3_heading {
         width: 143px;
@@ -1315,6 +1307,15 @@
         width: 275px;
         font-size: 15px;
         line-height: 20px;
+    }
+    .work_body_3_art_image {
+        background-position: 156% 133%;
+    }
+
+    .work_body_1_paragraph,
+    .work_body_2_paragraph,
+    .work_body_3_paragraph {
+        margin-top: -20px;
     }
     .work_footer_button {
         width: 250px;
@@ -1348,5 +1349,196 @@
         line-height: 15px;
         font-size: 14px;
         left: 7%;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+    .App-body {
+        background-color: #4A4A4A !important;
+    }
+    .navbar {
+        justify-content: space-between;
+        margin-inline-start: 20px;
+        margin-inline-end: 3px;
+    }
+    .menu-list{
+        display: none !important;
+    }
+    .menu-icon {
+        display: flex !important;
+    }
+    .menu-link {
+        padding: 0px 6px !important;
+    }
+    .hero {
+        padding-top: 0px;
+        margin-top: 20px;
+    }
+    .hero_left {
+        position: relative;
+        max-width: 300px !important;
+        left: 40px;
+        top: 0px;
+    }
+    .hero_title {
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .hero_para {
+        font-family: 'DM Sans';
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .hero_right {
+        background-image: none;
+    }
+    .hero_box_img {
+        position: relative;
+        width: 800px;
+        height: 504px;
+        right: -20%;
+        top: -260px;
+    }
+    .pick_plan {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-top: -350px;
+        padding-top: 75px;
+    }
+    .plan_body_right {
+        /* margin-left: 5px !important; */
+    }
+    .plan_body_main_heading {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 10px;
+        text-align: center;
+    }
+    .plan_body_sub_heading {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 5px;
+        text-align: center;
+        letter-spacing: 0.12em;
+    }
+    .plan_body_btn {
+        padding-bottom: 0px;
+    }
+    .plan_body_button {
+        box-sizing: border-box;
+        width: 180px;
+        height: 40px;
+        background: #EF8094;
+        border: 0px solid #EF8094;
+        border-radius: 300px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    .work {
+        padding-top: 10px;
+    }
+    .work_1_img {
+        margin-left: 10px !important;
+    }
+    .work_body_1_art_image {
+        background-image: url('./assets/art1.png');
+        background-repeat: no-repeat;
+        background-position: left top !important;
+        background-size: 50% !important;
+    }
+    .work_body_3_art_image {
+        background-image: url('./assets/art3.png');
+        background-repeat: no-repeat;
+        background-position: 100px bottom !important;
+        background-size: 50% !important;
+    }
+    .work_body_1_image {
+        position: relative;
+        width: calc(75%);
+    }
+    .work_body_2_image {
+        position: relative;
+        width: calc(200%);
+    }
+    .work_body_3_image {
+        position: relative;
+        width: calc(75%);
+    }
+
+    .work_body_1_number {
+        left: 15px;
+        top: -215px;
+        font-size: 175px;
+    }
+    .work_body_2_number {
+        left: 25px;
+        top: -90px;
+        font-size: 175px;
+    }
+    .work_body_3_number {
+        left: -5px;
+        top: -240px;
+        font-size: 175px;
+    }
+
+    .work_1_txt {
+        margin-left: -50px !important;
+        margin-top: 20px !important;
+    }
+    .work_2_txt {
+        padding-left: 125px;
+        position: relative;
+        bottom: 28%;
+    }
+    .work_3_txt {
+        margin-left: -20px !important;
+    }
+
+    .work_2{
+        position: relative;
+        left: 20% !important;
+    }
+
+    .work_3_img {
+        margin-left: 10px !important;
+    }
+    .work_body_1_paragraph,
+    .work_body_3_paragraph {
+        margin-top: -20px;
+        width: 100%;
+    }
+    .work_body_2_paragraph {
+        margin-top: -20px;
+        width: 75%;
+    }
+
+    .footer_content_1, .footer_content_2, .footer_content_3, .footer_content_4 {
+        left: 50px;
+    }
+    .footer_top_social {
+        left: 50%;
+        position: relative;
+    }
+    .footer_content_1_heading, .footer_content_2_heading, .footer_content_3_heading, .footer_content_4_heading {
+        font-size: 16px;
+        line-height: 15px;
+    }
+    .footer_bottom_terms {
+        font-size: 10px;
+        left: 50px;
+    }
+    .footer_bottom_policy {
+        font-size: 10px;
+    }
+    .footer_bottom_copyright {
+        font-size: 10px;
+        left: 6%;
     }
 }
